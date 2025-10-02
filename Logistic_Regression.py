@@ -9,11 +9,45 @@ import seaborn as sns
 
 # Load the dataset
 df = pd.read_csv('CTG_cleaned.csv')
+
+# Check class distribution before balancing
+print("Original class distribution:")
+print(df['NSP'].value_counts().sort_index())
+print(f"Class proportions:\n{df['NSP'].value_counts(normalize=True).sort_index()}")
+
+# Balance the dataset using resampling
+from sklearn.utils import resample
+
+# Separate classes
+nsp_1 = df[df['NSP'] == 1]
+nsp_2 = df[df['NSP'] == 2] 
+nsp_3 = df[df['NSP'] == 3]
+
+# Find the size of the largest class for upsampling
+max_size = max(len(nsp_1), len(nsp_2), len(nsp_3))
+print(f"\nTarget size for balanced classes: {max_size}")
+
+# Upsample minority classes to match the majority class
+nsp_1_upsampled = resample(nsp_1, replace=True, n_samples=max_size, random_state=42)
+nsp_2_upsampled = resample(nsp_2, replace=True, n_samples=max_size, random_state=42)
+nsp_3_upsampled = resample(nsp_3, replace=True, n_samples=max_size, random_state=42)
+
+# Combine upsampled classes
+df_balanced = pd.concat([nsp_1_upsampled, nsp_2_upsampled, nsp_3_upsampled])
+
+# Shuffle the balanced dataset
+df_balanced = df_balanced.sample(frac=1, random_state=42).reset_index(drop=True)
+
+print(f"\nBalanced dataset shape: {df_balanced.shape}")
+print("Balanced class distribution:")
+print(df_balanced['NSP'].value_counts().sort_index())
+print(f"Balanced class proportions:\n{df_balanced['NSP'].value_counts(normalize=True).sort_index()}")
+
 features = ['MSTV', 'MLTV', 'AC', 'AC', 'DE', 'DL', 'DP']
 
-# Prepare the data
-X = df[features]
-y = df['NSP']
+# Prepare the balanced data
+X = df_balanced[features]
+y = df_balanced['NSP']
 
 # Split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y)
