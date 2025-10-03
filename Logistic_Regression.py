@@ -77,17 +77,6 @@ print(f"\nModel Accuracy: {accuracy:.4f}")
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 
-# Feature importance (coefficients)
-feature_importance = pd.DataFrame({
-    'Feature': features,
-    'Coefficient_NSP1': model.coef_[0] if len(model.classes_) > 2 else model.coef_[0],
-    'Coefficient_NSP2': model.coef_[1] if len(model.classes_) > 2 else None,
-    'Coefficient_NSP3': model.coef_[2] if len(model.classes_) == 3 else None
-})
-
-print("\nFeature Coefficients:")
-print(feature_importance)
-
 # Display model parameters
 print(f"\nModel Classes: {model.classes_}")
 print(f"Number of iterations: {model.n_iter_}")
