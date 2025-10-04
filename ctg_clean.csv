@@ -1,0 +1,47 @@
+unnamed_0,cardiotocographic_data,unnamed_3,unnamed_9,unnamed_11,unnamed_12,unnamed_13
+Classification,2126 measurements and classifications of foetal heart rate (FHR) signals,,,,0,Nan
+Classification,,,,,0,Nan
+Worksheet,Raw Data,,Data (temporal features per unit time),,0,Nan
+Classification,,,,K-W,0,Dr is removed since p(k-w)=1
+Classification,,,Features,chi-square,p,Nan
+Exam data,FileName,of CTG examination,LB,243.5,0,Nan
+Classification,Date,of the examination,AC,1701.2,0,Nan
+Classification,b,start instant,FM,84.3,0,Nan
+Classification,e,end instant,UC,253.8,0,Nan
+Measurements,LBE,baseline value (medical expert),DL,1336.1,0,Nan
+Classification,LB,baseline value (SisPorto),DS,96.4,0,Nan
+Classification,AC,accelerations (SisPorto),DP,975,0,Nan
+Classification,FM,foetal movement (SisPorto),ASTV,450.9,0,Nan
+Classification,UC,uterine contractions (SisPorto),MSTV,872.1,0,Nan
+Classification,ASTV,percentage of time with abnormal short term variability  (SisPorto),ALTV,879.8,0,Nan
+Classification,mSTV,mean value of short term variability  (SisPorto),MLTV,240.9,0,Nan
+Classification,ALTV,percentage of time with abnormal long term variability  (SisPorto),Width,842.4,0,Nan
+Classification,mLTV,mean value of long term variability  (SisPorto),Min,897,0,Nan
+Classification,DL,light decelerations,Max,471.4,0,Nan
+Classification,DS,severe decelerations,Nmax,509.4,0,Nan
+Classification,DP,prolongued decelerations,Nzeros,212.8,0,Nan
+Classification,DR,repetitive decelerations,Mode,349,0,Nan
+Classification,Width,histogram width,Mean,524.4,0,Nan
+Classification,Min,low freq. of the histogram,Median,416.9,0,Nan
+Classification,Max,high freq. of the histogram,Variance,1279.2,0,Nan
+Classification,Nmax,number of histogram peaks,Tendency,143.9,0,Nan
+Classification,Nzeros,number of histogram zeros,,,0,Nan
+Classification,Mode,histogram mode,,,0,Nan
+Classification,Mean,histogram mean,,,0,Nan
+Classification,Median,histogram median,,,0,Nan
+Classification,Variance,histogram variance,,,0,Nan
+Classification,Tendency,histogram tendency: -1=left assymetric; 0=symmetric; 1=right assymetric,,,0,Nan
+Classification,A,calm sleep,,,0,Nan
+Classification,B,REM sleep,,,0,Nan
+Classification,C,calm vigilance,,,0,Nan
+Classification,D,active vigilance,,,0,Nan
+Classification,SH,shift pattern (A or Susp with shifts),,,0,Nan
+Classification,AD,accelerative/decelerative pattern (stress situation),,,0,Nan
+Classification,DE,decelerative pattern (vagal stimulation),,,0,Nan
+Classification,LD,largely decelerative pattern,,,0,Nan
+Classification,FS,flat-sinusoidal pattern (pathological state),,,0,Nan
+Classification,SUSP,suspect pattern,,,0,Nan
+Classification,CLASS,Class code (1 to 10) for classes A to SUSP,,,0,Nan
+Classification,NSP,Normal=1; Suspect=2; Pathologic=3,,,0,Nan
+SOURCE,"J Bernardes, Faculdade de Medicina, Universidade do Porto, Porto, Portugal",,,,0,Nan
+Reference: D Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318,,,,,0,Nan
