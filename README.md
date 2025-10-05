@@ -1,7 +1,7 @@
 Team ID: TM-96   
 Member 1: Attili Kireeti Aditya Kumar <br>
 Member 2: Chua Zi Yang    
-Member 2: Jeryl Neo Jia Le  
+Member 3: Jeryl Neo Jia Le  
 
 CTG Classification using Machine Learning:   
 This project applies multiple machine learning algorithms to classify Cardiotocography (CTG) data into three fetal health states (Normal, Suspect, and Pathologic) based on physiological features collected from fetal monitoring.  
