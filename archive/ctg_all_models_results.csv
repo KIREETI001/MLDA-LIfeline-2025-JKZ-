@@ -1,0 +1,5 @@
+model,cv_bal_acc_mean,cv_f1_macro_mean,cv_acc_mean,test_balanced_accuracy,test_macro_f1,test_accuracy
+XGB,0.9066,0.9244,0.958,0.8983,0.9088,0.9482
+SVM-RBF,0.8857,0.84,0.8969,0.861,0.8268,0.8872
+RandomForest,0.8697,0.8939,0.9427,0.8621,0.8896,0.939
+LogReg,0.8551,0.7858,0.874,0.8699,0.7943,0.8689
